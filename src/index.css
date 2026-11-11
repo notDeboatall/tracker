@@ -1,0 +1,97 @@
+@import '@fontsource-variable/bricolage-grotesque';
+@import '@fontsource-variable/instrument-sans';
+@import '@fontsource/ibm-plex-mono';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Core Paper & Ink tokens (Light) */
+  --paper: #F5F2EA;
+  --surface: #FFFDF8;
+  --surface-2: #ECE8DD;
+  --line: #DDD8CA;
+  --ink: #17181A;
+  --ink-muted: #6A665C;
+  --hi: #DDEB5A;
+  --danger: #C8412F;
+  --success: #2E7D52;
+
+  /* Block semantic colours (Light) */
+  --block-gym-tint: #FADBD0;
+  --block-gym-strong: #A8391F;
+
+  --block-dsa-tint: #D6E6F5;
+  --block-dsa-strong: #234F85;
+
+  --block-aiml-tint: #D8EBD0;
+  --block-aiml-strong: #2D6A35;
+
+  --block-task-tint: #E6DCF3;
+  --block-task-strong: #5A3A8C;
+
+  --block-task-urgent-tint: #F8E0A8;
+  --block-task-urgent-strong: #8A5200;
+
+  --block-fixed-tint: #E4E1D8;
+  --block-fixed-strong: #5B584E;
+
+  --block-ride-tint: #E4E1D8;
+  --block-ride-strong: #5B584E;
+}
+
+.dark {
+  /* Core Paper & Ink tokens (Dark) */
+  --paper: #141412;
+  --surface: #1C1C19;
+  --surface-2: #262622;
+  --line: #34342E;
+  --ink: #F1EEE6;
+  --ink-muted: #A09B8E;
+  --hi: #D6E655;
+  --danger: #F0705F;
+  --success: #4BC083;
+
+  /* Block semantic colours (Dark) */
+  --block-gym-tint: rgba(255, 139, 112, 0.16);
+  --block-gym-strong: #FF8B70;
+
+  --block-dsa-tint: rgba(126, 178, 240, 0.16);
+  --block-dsa-strong: #7EB2F0;
+
+  --block-aiml-tint: rgba(124, 214, 135, 0.16);
+  --block-aiml-strong: #7CD687;
+
+  --block-task-tint: rgba(192, 160, 238, 0.16);
+  --block-task-strong: #C0A0EE;
+
+  --block-task-urgent-tint: rgba(255, 192, 110, 0.16);
+  --block-task-urgent-strong: #FFC06E;
+
+  --block-fixed-tint: rgba(176, 170, 160, 0.14);
+  --block-fixed-strong: #B0AAA0;
+
+  --block-ride-tint: rgba(176, 170, 160, 0.14);
+  --block-ride-strong: #B0AAA0;
+}
+
+/* Base resets & typography */
+html, body {
+  background-color: var(--paper);
+  color: var(--ink);
+  font-family: 'Instrument Sans Variable', system-ui, sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Reduced motion preference support */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
