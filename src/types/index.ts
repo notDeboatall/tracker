@@ -159,3 +159,4 @@ export interface ReplanResult {
   conflicts: Conflict[];
   stats: { freeMin: number; plannedHabitMin: number; plannedTaskMin: number };
 }
+

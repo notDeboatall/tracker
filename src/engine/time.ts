@@ -106,3 +106,4 @@ export function isOverlapping(
 ): boolean {
   return Math.max(a.start, b.start) < Math.min(a.end, b.end);
 }
+

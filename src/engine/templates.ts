@@ -27,7 +27,7 @@ export const MON_WED_BLOCKS: TemplateBlock[] = [
     start: toMin('07:30'),
     end: toMin('08:00'),
     layer: 'L0',
-    pinned: true,
+    pinned: false,
   },
   {
     kind: 'fixed',
@@ -35,7 +35,7 @@ export const MON_WED_BLOCKS: TemplateBlock[] = [
     start: toMin('08:00'),
     end: toMin('13:00'),
     layer: 'L0',
-    pinned: true,
+    pinned: false,
   },
   {
     kind: 'fixed',
@@ -43,7 +43,7 @@ export const MON_WED_BLOCKS: TemplateBlock[] = [
     start: toMin('13:00'),
     end: toMin('13:30'),
     layer: 'L0',
-    pinned: true,
+    pinned: false,
   },
   {
     kind: 'routine',
@@ -71,12 +71,12 @@ export const MON_WED_BLOCKS: TemplateBlock[] = [
     pinned: false,
   },
   {
-    kind: 'fixed',
+    kind: 'routine',
     title: 'Ride to gym',
     start: toMin('16:00'),
     end: toMin('16:10'),
-    layer: 'L0',
-    pinned: true,
+    layer: 'L5',
+    pinned: false,
   },
   {
     kind: 'habit',
@@ -142,12 +142,12 @@ export const THU_SAT_BLOCKS: TemplateBlock[] = [
     pinned: false,
   },
   {
-    kind: 'fixed',
+    kind: 'routine',
     title: 'Ride to gym',
     start: toMin('07:15'),
     end: toMin('07:25'),
-    layer: 'L0',
-    pinned: true,
+    layer: 'L5',
+    pinned: false,
   },
   {
     kind: 'routine',
@@ -197,7 +197,7 @@ export const THU_SAT_BLOCKS: TemplateBlock[] = [
     start: toMin('12:30'),
     end: toMin('13:00'),
     layer: 'L0',
-    pinned: true,
+    pinned: false,
   },
   {
     kind: 'fixed',
@@ -205,7 +205,7 @@ export const THU_SAT_BLOCKS: TemplateBlock[] = [
     start: toMin('13:00'),
     end: toMin('19:00'),
     layer: 'L0',
-    pinned: true,
+    pinned: false,
   },
   {
     kind: 'fixed',
@@ -213,7 +213,7 @@ export const THU_SAT_BLOCKS: TemplateBlock[] = [
     start: toMin('19:00'),
     end: toMin('19:30'),
     layer: 'L0',
-    pinned: true,
+    pinned: false,
   },
   {
     kind: 'routine',

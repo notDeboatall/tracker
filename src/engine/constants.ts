@@ -52,3 +52,4 @@ export const DEFAULT_SETTINGS: Settings = {
     model: 'gemini-1.5-flash-latest',
   },
 };
+

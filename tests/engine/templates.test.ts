@@ -73,14 +73,13 @@ describe('engine/templates (Seed Templates & Scenario S1)', () => {
       const college = MON_WED_TEMPLATE.blocks.find((b) => b.title === 'College');
       expect(college).toBeDefined();
       expect(college!.layer).toBe('L0');
-      expect(college!.pinned).toBe(true);
       expect(college!.start).toBe(480); // 08:00
       expect(college!.end).toBe(780); // 13:00
 
       const fixedRides = MON_WED_TEMPLATE.blocks.filter(
         (b) => b.kind === 'fixed' && b.title.startsWith('Ride')
       );
-      expect(fixedRides.length).toBe(3); // ride to college, ride home, ride to gym
+      expect(fixedRides.length).toBe(2); // ride to college, ride home
       fixedRides.forEach((r) => {
         expect(r.kind).toBe('fixed');
         expect(r.layer).toBe('L0');
